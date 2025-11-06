@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+
+# Kustomization이 관리할 리소스 목록을 정의
+resources:
+- hello-app-deployment.yaml
+images:
+- name: supermax953381/hello-app
+  newName: supermax953381/hello-app
+  newTag: 951e637
